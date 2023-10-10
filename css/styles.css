@@ -1,0 +1,165 @@
+textarea {
+	width:95%;
+	height:500px;
+	font-family:"Courier";
+	background-color:#F9F9F9;
+	margin-top:10px;
+	margin-left:10px;
+}
+
+#directions {
+	border:5px dashed #B49EFF;
+	padding:10px;
+	margin-top:0px;
+}
+
+#directions h2 {
+	padding-top:0px;
+}
+
+/*#codeArea {
+	padding:30px;
+}*/
+
+.sizeInput {
+	width:30px;
+}
+
+.gray {
+	background-color:#EEEEEE;
+}
+
+#colorTable {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+#colorTable td {
+	border:2px solid black;
+	text-align:center;
+	font-weight:bold;
+}
+
+#colorTable td.color {
+	width:50px;
+	height:50px;
+}
+
+#colorTableHeading {
+	padding:5px;
+	margin:5px;
+}
+
+#colorTableCurrent {
+	padding:10px;
+	width:200px;
+}
+
+#display {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#libraryLink {
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+#libraryLink a {
+	font-size:x-large;
+	font-weight:bold;
+}
+
+#color-white, .white {
+	background-color:white;
+}
+#color-blue, .blue {
+	background-color:#00FFF6;
+}
+#color-green, .green {
+	background-color:#56FF6A;
+}
+#color-yellow, .yellow {
+	background-color:yellow;
+}
+#color-purple, .purple {
+	background-color:#C8B5FF;
+}
+#color-orange, .orange {
+	background-color:#FF9E5E;
+}
+#color-pink, .pink {
+	background-color:#FFBABA;
+}
+#color-lightblue, .lightblue {
+	background-color:#A3C6FF;
+}
+
+.gray {
+	background-color:gray;
+}
+
+.error {
+	color:red;
+}
+
+#legend {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#chartModeBtn {
+	float:right;
+	width:250px;
+	height:25px;
+}
+
+.legendSymbol {
+	border:1px solid black;
+	width:25px;
+	height:25px;
+	text-align:center;
+}
+
+.legendDesc {
+	padding-left:10px;
+}
+
+.spacing {
+	width:50px;
+}
+
+#patternTable td {
+	width:36px;
+	height:36px;
+	border:0px;
+	margin:0px;
+	padding:0px;
+}
+
+#patternTable .rightSidePurl, #patternTable .wrongSideKnit {
+	background-image:url('../img/rs_purl_translucent.png');
+}
+
+#patternTable .rightSideKnit, #patternTable .wrongSidePurl {
+	background-image:url('../img/rs_knit.png');
+}
+
+#chartTable td {
+	width:25px;
+	height:25px;
+	border:1px solid black;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+
+#chooseView {
+	text-align:center;
+}
+
+#footer {
+	padding:10px;
+	font-size:small;
+}

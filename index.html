@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Knitting Visualizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="codeArea">
+				<div id="chooseView">
+					<button role="button" id="chartViewBtn" class="btn btn-lg btn-info">Chart View</button>
+					<button role="button" id="patternViewBtn" class="btn btn-lg btn-info">Pattern View</button>
+				</div>
+				<div id="libraryLink">
+					<a href="library.html" target="_blank">Go to Knitting & Code Library</a>
+				</div>
+				<div id="entry">
+					<h1>Code Editor</h1>
+					<textarea id="codeText">setStitchesPerRow(20);&#13;&#10;setColor("green");&#13;&#10;&#13;&#10;knitRow();&#13;&#10;purlRow();&#13;&#10;knitRow();&#13;&#10;purlRow();</textarea><br />
+					<button role="button" id="runCodeBtn" class="btn btn-primary">Run Code &#8594;</button>
+				</div>
+				<div id="error"></div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="displayArea">
+				<div id="legend">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<table>
+								<tr>
+									<td class="legendSymbol">&nbsp;</td>
+									<td class="legendDesc">knit</td>
+									<td class="spacing">&nbsp;</td>
+									<td class="legendSymbol">&#9679;</td>
+									<td class="legendDesc">purl</td>
+									<td class="spacing">&nbsp;</td>
+									<td><button role="button" id="chartModeBtn" class="btn btn-info">Go to Edit Mode</button></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div id="displayHeading">
+					<h1>Knitting Pattern</h1>
+				</div>
+				<div id="display"></div>
+				<div id="editUI">
+					<span>Number of rows: <input type="text" name="numRowsInput" class="sizeInput" id="numRowsInput" disabled></span><br />
+					<span>Stitches per row: <input type="text" name="stitchesPerRowInput" class="sizeInput" id="stitchesPerRowInput" disabled></span><br /><br />
+					<button role="button" id="resizeChartBtn" class="btn btn-primary">&#8593; Resize Chart</button>
+					<br /><br />
+					<button role="button" id="generateCodeBtn" class="btn btn-primary">&#8592; Generate Code</button>
+				</div>
+				<div id="colorPalette">
+					<table id="colorTable">
+						<tr>
+							<td colspan="8" id="colorTableHeading">Color Palette</td>
+						</tr>
+						<tr>
+							<td id="color-white" class="color" title="white">&nbsp;</td>
+							<td id="color-blue" class="color" title="blue">&nbsp;</td>
+							<td id="color-green" class="color" title="green">&nbsp;</td>
+							<td id="color-yellow" class="color" title="yellow">&nbsp;</td>
+							<td id="color-purple" class="color" title="purple">&nbsp;</td>
+							<td id="color-orange" class="color" title="orange">&nbsp;</td>
+							<td id="color-pink" class="color" title="pink">&nbsp;</td>
+							<td id="color-lightblue" class="color" title="lightblue">&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="8" id="colorTableCurrent" class="white">Current Color</td>
+						</tr>
+					</table>
+				</div>
+				<div id="directions">
+					<h2>Directions</h2>
+					<p>Click "Run Code" to generate a knitting pattern based on your code.</p>
+					<p>Click "Generate code" to create programming code based on your knitting pattern!</p>
+					<p>Click "Chart View" and "Pattern View" to toggle between the symbolic knitting chart and the preview of the knitted piece.</p>
+					<p>Click "View" in the top right to toggle between View and Edit mode on the symbolic knitting chart.</p>
+					<p>Edit mode will allow you to modify the stitch type and color to manually edit the symbolic knitting chart.
+						<ul>
+							<li>Toggle knit/purl by clicking.</li>
+							<li>CTRL+click on windows, command+click on Mac to color a stitch <em>according to the palette's current color.</em></li>
+						</ul></p>
+					<p><strong>Note:</strong> Some features may be buggy!</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p>Knit and purl illustrations modified from images from <a href="http://www.lionbrand.com/blog/a-good-read-identifying-your-stitches/">Heather Lodinsky's guide to identifying stitches</a>. Modification and use in this project is allowable under the Fair Use copyright guidelines.</p>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/knitting-core.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
